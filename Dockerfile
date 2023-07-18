@@ -9,6 +9,7 @@ LABEL author="Siad Ardroumli <siad.ardroumli@gmail.com>"
 
 ARG PHING_VERSION=2.16.3
 
+RUN apk add sudo
 RUN composer global require --no-progress phing/phing-composer-configurator dev-master && \
     composer global require --no-progress phing/phing $PHING_VERSION
 
