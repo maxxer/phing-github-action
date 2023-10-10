@@ -7,7 +7,7 @@ LABEL repository="https://github.com/phingofficial/phing-github-action"
 LABEL homepage="https://github.com/phingofficial/phing-github-action"
 LABEL author="Siad Ardroumli <siad.ardroumli@gmail.com>"
 
-ARG PHING_VERSION=2.16.3
+ARG PHING_VERSION=2.17.4
 
 RUN apk add sudo rsync mysql-client
 RUN composer global require --no-progress phing/phing-composer-configurator dev-master && \
